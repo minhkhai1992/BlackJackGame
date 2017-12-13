@@ -1,0 +1,35 @@
+
+
+In this project I need to create a solution designed to play Blackjack. Only use simple rules of the game. Assume there exists a player and a dealer. The winner of the game is the player who gets closest to 21 without exceeding 21 or "going bust". If both players have the same points, then neither player wins the hand. An ace has a value of 1 or 11. Face cards have a value of 10. The dealer must take a card if the dealer's hand is worth 16 or less. The dealer may not take a card if the hand is worth 17 or more. As the player, you may take the card at any time.
+
+Allow the user to play as many hands as he/she wants.
+
+Keep track of how many hands the dealer wins and how many hands the player wins.
+
+How to get started;
+
+Create a class called Card. The Card class has 3 fields; a value, a suit, and a face.
+
+The Card class has a constructor that takes three values for the two fields. Create a "no-args: constructor.
+
+The Card class has three methods to return the vvalues of each fields. The Card class has a toString() method.
+
+The Card class has a compareTo() method that uses the value of the card to determine the ordering.
+
+Create an equal() method that returns true if the parameter Card has the same suit and the same face as the invoking Card.
+
+Create a class called Deck. Adeck has two fields-an array of Cards and an int which holds the subscript of the card at the top of the deck.
+
+The Deck class will have only one constructor, which will create the arrray. Try to code this without using 52 statements.
+
+The Deck class also has a method getTopCard() which returns a copy of the Card that is at the top of the array.
+
+The Deck class has a method called shuffle() which shuffles the array of cards. To shuffle, generate random numbers and use these to exchange array elements. Exchange 1000 times in this method.
+
+Create the Driver class-call it Game 21;
+
+This is where the game logic will go. As a hint, you will need to create two Deck instances and then call the shuffle method() for each.
+
+Each player is dealt two cards to start. Only the user has the choice to deal another card or quit. The dealer(computer) must be dealt another card from its deck if its total is 16 or under and must quit it its hand is 17 or over.
+
+Once the hand is won, either by the computer or the player, allow the player to decide if he/she wants to play another hand. Keep a running total of the number of hands won by the computer and the number of hands won by the player.
